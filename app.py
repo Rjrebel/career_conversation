@@ -107,13 +107,13 @@ class Me:
     def __init__(self):
         self.mistral =  Mistral(api_key=api_key)
         self.name = "Rohit Jibhakate"
-        reader = PdfReader(r"D:\Gen AI World\Agentic AI Udemy\agents\1_foundations\me\linkedin.pdf")
+        reader = PdfReader(r"linkedin.pdf")
         self.linkedin = ""
         for page in reader.pages:
             text = page.extract_text()
             if text:
                 self.linkedin += text
-        with open(r"D:\Gen AI World\Agentic AI Udemy\agents\1_foundations\me\summary.txt", "r", encoding="utf-8") as f:
+        with open(r"summary.txt", "r", encoding="utf-8") as f:
             self.summary = f.read()
 
 
