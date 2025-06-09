@@ -1,0 +1,6 @@
+gradio
+pypdf
+requests
+python-dotenv
+mistralai
+
